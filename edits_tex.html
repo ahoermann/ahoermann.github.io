@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- Created by htmlize-1.57 in inline-css mode. -->
+<html>
+  <head>
+    <title>edits_tex.patch</title>
+  </head>
+  <body style="color: #000000; background-color: #ffffff;">
+    <pre>
+<span style="background-color: #d9d9d9;">diff --git a/survey_gisas.tex b/survey_gisas.tex
+index 31f8ff4..89ad977 100644
+--- </span><span style="background-color: #bfbfbf; font-weight: bold;">a/survey_gisas.tex</span><span style="background-color: #d9d9d9;">
++++ </span><span style="background-color: #bfbfbf; font-weight: bold;">b/survey_gisas.tex</span><span style="background-color: #d9d9d9;">
+</span><span style="background-color: #d9d9d9;">@@ -1,4 +1,4 @@</span>
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">% Created 2025-</span><span style="background-color: #ffcccc;">06</span><span style="background-color: #ffeeee;">-</span><span style="background-color: #ffcccc;">13</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">Fri</span><span style="background-color: #ffeeee;"> 11:</span><span style="background-color: #ffcccc;">22</span><span style="background-color: #ffeeee;">
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">% Created 2025-</span><span style="background-color: #bbffbb;">08</span><span style="background-color: #eeffee;">-</span><span style="background-color: #bbffbb;">04</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">Mon</span><span style="background-color: #eeffee;"> 11:</span><span style="background-color: #bbffbb;">54</span><span style="background-color: #eeffee;">
+</span> % Intended LaTeX compiler: xelatex
+ \documentclass[a4paper,twocolumn]{article}
+ \usepackage{graphicx}
+<span style="background-color: #d9d9d9;">@@ -8,38 +8,50 @@</span>
+ \usepackage[normalem]{ulem}
+ \usepackage{capt-of}
+ \usepackage{hyperref}
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">\usepackage{booktabs}\usepackage{longtable}
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">\usepackage{booktabs}\usepackage{longtable}</span><span style="background-color: #bbffbb;">\usepackage{multicol}</span><span style="background-color: #eeffee;">
+</span> \usepackage{amsmath}
+ \usepackage{csquotes}
+ \usepackage{biblatex}\usepackage{etoolbox}\usepackage{siunitx}
+ \addbibresource{references.bib}
+ \author{Anja F. H&#246;rmann, Melika Moradi, Ingo Bre&#223;ler, and Brian R. Pauw}
+ \date{\today}
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">\title{Grazing incidence scattering surveyed: </span><span style="background-color: #ffcccc;">state of</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">the</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">art</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">in</span><span style="background-color: #ffeeee;"> alignment and calibration}
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">\title{Grazing incidence scattering surveyed: </span><span style="background-color: #bbffbb;">toward</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">reference</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">methods</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">for</span><span style="background-color: #eeffee;"> alignment and calibration}
+</span> \hypersetup{
+  pdfauthor={Anja F. H&#246;rmann, Melika Moradi, Ingo Bre&#223;ler, and Brian R. Pauw},
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;"> pdftitle={Grazing incidence scattering surveyed: </span><span style="background-color: #ffcccc;">state of</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">the</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">art</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">in</span><span style="background-color: #ffeeee;"> alignment and calibration},
+</span><span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;"> pdfkeywords={grazing incidence, alignment, calibration, community, standardization},
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;"> pdftitle={Grazing incidence scattering surveyed: </span><span style="background-color: #bbffbb;">toward</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">reference</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">methods</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">for</span><span style="background-color: #eeffee;"> alignment and calibration},
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;"> pdfkeywords={grazing incidence, alignment, calibration</span><span style="background-color: #bbffbb;">, reference method</span><span style="background-color: #eeffee;">, community, standardization},
+</span>  pdfsubject={},
+  pdfcreator={Emacs 29.4 (Org mode 9.7.24)}, 
+  pdflang={English}}
+ \begin{document}
+ 
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">\maketitle
+</span><span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">\begin{abstract}
+</span><span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffcccc;">We surveyed</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">grazing</span><span style="background-color: #ffeeee;"> incidence small-angle scattering (GISAS)
+</span><span style="color: #aa2222; background-color: #ffcccc;">-</span><span style="background-color: #ffcccc;">practitioners on what comes before an experiment: hardware, software,
+</span><span style="color: #aa2222; background-color: #ffcccc;">-</span><span style="background-color: #ffcccc;">sample alignment, and instrument calibration. Our data on 27 instruments provides
+</span><span style="color: #aa2222; background-color: #ffcccc;">-</span><span style="background-color: #ffcccc;">the basis for standardisation in GISAS,</span><span style="background-color: #ffeeee;"> a relatively young technique
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">\</span><span style="background-color: #bbffbb;">renewcommand{\abstractname}{\vspace{-\baselineskip}}
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">\twocolumn[
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">  \begin{@twocolumnfalse}
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">    \</span><span style="background-color: #eeffee;">maketitle
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">    \begin{abstract}
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">Grazing</span><span style="background-color: #eeffee;"> incidence small-angle scattering (GISAS) </span><span style="background-color: #bbffbb;">is</span><span style="background-color: #eeffee;"> a relatively young technique
+</span> with important applications in thin film technology and untapped
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">potential when it comes to 2d analysis in absolute scale. Twenty-two
+</span><span style="color: #aa2222; background-color: #ffcccc;">-</span><span style="background-color: #ffeeee;">questions were designed to elucidate the state of the art which we can </span><span style="background-color: #ffcccc;">work with</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">in</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">standardization,</span><span style="background-color: #ffeeee;">
+</span><span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffcccc;">and</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">gather</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">tips</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">and</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">tricks</span><span style="background-color: #ffeeee;">. We found laboratories, with very
+</span><span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">few exceptions, to be prepared to implement </span><span style="background-color: #ffcccc;">standards</span><span style="background-color: #ffeeee;"> but no </span><span style="background-color: #ffcccc;">standard</span><span style="background-color: #ffeeee;">
+</span><span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffcccc;">emerging</span><span style="background-color: #ffeeee;"> naturally for sample alignment and instrument calibration. We,
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">potential when it comes to 2d analysis in absolute scale.
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">Approaching standardisation and reference methods early is foundational for reproducibility and comparability across laboratories and reduction of systematic error sources.
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">It underpins trust in data obtained and accelerates innovation by working from a common methodological baseline.
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">Accordingly, obtaining reproducible results from different GISAS instruments requires an agreement on how
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">things are done, calibrated and defined.
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">To pave the way for standardisation and reference methods,
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">we surveyed GISAS practitioners on what comes before an experiment: hardware, software,
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">sample alignment, and instrument calibration.
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #eeffee;">Twenty-two questions were designed to elucidate the state of the art </span><span style="background-color: #bbffbb;">based on</span><span style="background-color: #eeffee;"> which
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #eeffee;">we can </span><span style="background-color: #bbffbb;">develop</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">reference</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">methods.</span><span style="background-color: #eeffee;">
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #bbffbb;">Our</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">data</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">on</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">27</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">instruments provides the basis for standardisation</span><span style="background-color: #eeffee;">.
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #eeffee;">We found laboratories, with very
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">few exceptions, to be prepared to implement </span><span style="background-color: #bbffbb;">future reference methods</span><span style="background-color: #eeffee;"> but no </span><span style="background-color: #bbffbb;">consensus</span><span style="background-color: #eeffee;">
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #bbffbb;">emerges</span><span style="background-color: #eeffee;"> naturally for sample alignment and instrument calibration. We,
+</span> that is the GISAS community, are thus in a position to embark on the
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">journey of </span><span style="background-color: #ffcccc;">standardization</span><span style="background-color: #ffeeee;">. Engage! % lol :).
+</span><span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">\end{abstract}
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">journey of </span><span style="background-color: #bbffbb;">standardisation</span><span style="background-color: #eeffee;">. Engage! % lol :).
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">    \end{abstract</span><span style="background-color: #bbffbb;">}
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">  \end{@twocolumnfalse}
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">  ]\vspace{\baselineskip</span><span style="background-color: #eeffee;">}
+</span> \section{Introduction}
+ \label{sec:orga1dc171}
+ 
+<span style="background-color: #d9d9d9;">@@ -57,14 +69,14 @@</span><span style="background-color: #d9d9d9;"> scattering and reflectometry instruments requires an agreement on how</span>
+ things are done, calibrated and defined. Whether the grazing incidence community has converged on a methodology
+ remains to be proven. Therefore, we designed a survey around this
+ question, the result of which can serve as a starting point for
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">standardisation </span><span style="background-color: #ffcccc;">in</span><span style="background-color: #ffeeee;"> GI scattering. Contrary to
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">standardisation </span><span style="background-color: #bbffbb;">and reference methods for</span><span style="background-color: #eeffee;"> GI scattering. Contrary to
+</span> reflectometry\footnote{Reflectometry emerged in earlier decades and has undergone standardisation \cite{iso_xrr_2020} to some extent.}, GI is a good candidate for this
+ effort since it emerged in the 1980s
+ \cite{vineyard82_grazin_incid_diffr_distor_wave}, has a degree of
+ variability due to the necessary alignment of every sample
+ \cite{holzer22_impac_sampl_misal_grazin_incid}, and requires considerable
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">effort for analysis at the time of writing. This paper</span><span style="background-color: #ffcccc;">,</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">as</span><span style="background-color: #ffeeee;"> the
+</span><span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">underlying questionnaire</span><span style="background-color: #ffcccc;">,</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">focuses</span><span style="background-color: #ffeeee;"> on preparation of a GI experiment:
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">effort for analysis at the time of writing. This paper </span><span style="background-color: #bbffbb;">and</span><span style="background-color: #eeffee;"> the
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">underlying questionnaire </span><span style="background-color: #bbffbb;">focus</span><span style="background-color: #eeffee;"> on </span><span style="background-color: #bbffbb;">the</span><span style="background-color: #eeffee;"> preparation of a GI experiment:
+</span> hardware, software, sample alignment, and calibration.
+ \section{Survey methodology}
+ \label{sec:org962bde1}
+<span style="background-color: #d9d9d9;">@@ -80,17 +92,15 @@</span><span style="background-color: #d9d9d9;"> software, alignment and calibration routines with two main goals:</span>
+ \begin{enumerate}
+ \item To ensure as many instruments as possible can implement a standard
+ developed on this basis.
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">\item To learn about the best methods by allowing respondents to </span><span style="background-color: #ffcccc;">enter</span><span style="background-color: #ffeeee;">
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">\item To learn about the best methods by allowing respondents to </span><span style="background-color: #bbffbb;">share</span><span style="background-color: #eeffee;">
+</span> bespoke solutions they have developed.
+ \end{enumerate}
+ 
+ We employed a mixture of multiple choice, short free-form text and
+ optional long free-form text. Two github gists were set up to allow
+ respondents to contribute code samples, sample holder images, and
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">comments. The </span><span style="background-color: #ffcccc;">choice</span><span style="background-color: #ffeeee;"> to allow but not require more in-depth responses
+</span><span style="color: #aa2222; background-color: #ffcccc;">-</span><span style="background-color: #ffeeee;">was </span><span style="background-color: #ffcccc;">deliberate</span><span style="background-color: #ffeeee;"> to encourage </span><span style="background-color: #ffcccc;">responses,</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">with</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">the</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">drawback</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">of</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">leaving</span><span style="background-color: #ffeeee;">
+</span><span style="color: #aa2222; background-color: #ffcccc;">-</span><span style="background-color: #ffeeee;">the \enquote{</span><span style="background-color: #ffcccc;">Why</span><span style="background-color: #ffeeee;">?} behind the answers unanswered </span><span style="background-color: #ffcccc;">in many
+</span><span style="color: #aa2222; background-color: #ffcccc;">-</span><span style="background-color: #ffcccc;">cases</span><span style="background-color: #ffeeee;">.
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">comments. The </span><span style="background-color: #bbffbb;">decision</span><span style="background-color: #eeffee;"> to allow</span><span style="background-color: #bbffbb;">,</span><span style="background-color: #eeffee;"> but not require</span><span style="background-color: #bbffbb;">,</span><span style="background-color: #eeffee;"> more in-depth responses was </span><span style="background-color: #bbffbb;">made deliberately</span><span style="background-color: #eeffee;"> to encourage </span><span style="background-color: #bbffbb;">participants</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">to</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">respond,</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">but</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">this</span><span style="background-color: #eeffee;"> </span><span style="background-color: #bbffbb;">meant that</span><span style="background-color: #eeffee;"> the \enquote{</span><span style="background-color: #bbffbb;">why</span><span style="background-color: #eeffee;">?} behind the answers </span><span style="background-color: #bbffbb;">often
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">remained</span><span style="background-color: #eeffee;"> unanswered.
+</span> \subsection{Data collection}
+ \label{sec:org922c880}
+ 
+<span style="background-color: #d9d9d9;">@@ -99,13 +109,13 @@</span><span style="background-color: #d9d9d9;"> the sa\_scat@iucr.org mailing list, and personal e-mail communication between Ju</span>
+ On July 18, 2024 at SXNS17, the 
+ survey was introduced and access shared via a QR code in session
+ (attendance: a few dozen). Later that day an announcement e-mail
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">followed to the sa\_scat@iucr.org mailing list</span><span style="background-color: #ffcccc;">, to</span><span style="background-color: #ffeeee;"> </span><span style="background-color: #ffcccc;">which</span><span style="background-color: #ffeeee;"> 363 </span><span style="background-color: #ffcccc;">people subscribe</span><span style="background-color: #ffeeee;"> as of April 17, 2025.
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">followed to the sa\_scat@iucr.org mailing list </span><span style="background-color: #bbffbb;">(with</span><span style="background-color: #eeffee;"> 363 </span><span style="background-color: #bbffbb;">subscribers</span><span style="background-color: #eeffee;"> as of April 17, 2025</span><span style="background-color: #bbffbb;">)</span><span style="background-color: #eeffee;">.
+</span> Further responses were gathered by word of mouth as well as
+ individual encouragement to (beamline) scientists by the authors,
+ followed by a second and third oral presentation at canSAS and SAS2024
+ (Taipei, Taiwan; attendance: a few dozen). Responses received until
+ March 4th, 2025 are considered for the present communication.
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">Since our own </span><span style="background-color: #ffcccc;">lab</span><span style="background-color: #ffeeee;"> GISAXS remains under development we did not fill
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">Since our own GISAXS </span><span style="background-color: #bbffbb;">setup in the lab</span><span style="background-color: #eeffee;"> remains under development we did not fill
+</span> the survey ourselves. 
+ \subsection{Response}
+ \label{sec:orgb632fe1}
+<span style="background-color: #d9d9d9;">@@ -161,7 +171,7 @@</span><span style="background-color: #d9d9d9;"> difference in horizontal and vertical emittance at synchrotron sources \cite{xra</span>
+ 
+ In addition, the horizontal orientation is advantageous for samples
+ influenced by gravity, although for liquid surfaces the ability to
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">pitch the beam </span><span style="background-color: #ffcccc;">downward</span><span style="background-color: #ffeeee;"> is required as well.
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">pitch the beam is required as well.
+</span> 
+ \phantomsection
+ \label{orientation_count}
+<span style="background-color: #d9d9d9;">@@ -186,6 +196,7 @@</span><span style="background-color: #d9d9d9;"> and adapt routines is, for standardization purposes, more important than</span>
+ any specific software used (\ref{fig:software}).
+ To conclude, the hardware and software layers available are adjustable to accommodate standardized alignment and calibration tasks.
+ 
+<span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">
+</span> \phantomsection
+ \label{hardware_count}
+ \begin{figure}[htbp]
+<span style="background-color: #d9d9d9;">@@ -227,7 +238,8 @@</span><span style="background-color: #d9d9d9;"> the sample's reflectivity and peaks at incident angle zero (see \ref{fig:rocking</span>
+ instruments report to rely on the specular reflection for alignment
+ purposes.
+ In conclusion, respondents do not all have the same signal available
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">for alignment purposes such that their alignment routines necessarily differ. 
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">for alignment purposes such that their alignment routines necessarily differ.
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">Conditional recommendations would therefore be the closest approximation to a reference method for sample alignment.</span><span style="background-color: #eeffee;">
+</span> 
+ \phantomsection
+ \label{}
+<span style="background-color: #d9d9d9;">@@ -286,6 +298,7 @@</span><span style="background-color: #d9d9d9;"> different distances. The majority of users of this technique are lab</span>
+ instrument scientists (as stated above, our lab instrument is not in the
+ dataset).
+ Even if concrete choices like number of points used for calibration
+<span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">and whether calibration is done in transmission or reflection geometry
+</span> are not reflected in the dataset, an agreement seems more tangible here.
+ Once a recommended general principle for instrument calibration is
+ identified, work on questions like uncertainties of the calibration results
+<span style="background-color: #d9d9d9;">@@ -358,9 +371,10 @@</span><span style="background-color: #d9d9d9;"> x &amp; x translation &amp; translation &amp; 1 0 0\\</span>
+ \section{Supporting Information}
+ \label{sec:orga13773e}
+ 
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">
+</span><span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">\</span><span style="background-color: #ffcccc;">subsection</span><span style="background-color: #ffeeee;">{</span><span style="background-color: #ffcccc;">Questions</span><span style="background-color: #ffeeee;">}
+</span><span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffeeee;">\</span><span style="background-color: #ffcccc;">label</span><span style="background-color: #ffeeee;">{</span><span style="background-color: #ffcccc;">sec</span><span style="background-color: #ffeeee;">:</span><span style="background-color: #ffcccc;">org41bebf8</span><span style="background-color: #ffeeee;">}
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #bbffbb;">We report survey questions (table \ref{tab:questions}), countries where</span><span style="background-color: #eeffee;">
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #bbffbb;">participating institutions are located (table</span><span style="background-color: #eeffee;"> \</span><span style="background-color: #bbffbb;">ref</span><span style="background-color: #eeffee;">{</span><span style="background-color: #bbffbb;">tab:country_count</span><span style="background-color: #eeffee;">}</span><span style="background-color: #bbffbb;">) as well</span><span style="background-color: #eeffee;">
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #bbffbb;">as unique alignment routines (Fig.</span><span style="background-color: #eeffee;"> \</span><span style="background-color: #bbffbb;">ref</span><span style="background-color: #eeffee;">{</span><span style="background-color: #bbffbb;">fig</span><span style="background-color: #eeffee;">:</span><span style="background-color: #bbffbb;">alignment</span><span style="background-color: #eeffee;">}</span><span style="background-color: #bbffbb;">) and
+</span><span style="color: #22aa22; background-color: #bbffbb;">+</span><span style="background-color: #bbffbb;">most frequently mentioned software (Fig. \ref{fig:software}).</span><span style="background-color: #eeffee;">
+</span> 
+ \phantomsection
+ \label{}
+<span style="background-color: #d9d9d9;">@@ -420,8 +434,7 @@</span><span style="background-color: #d9d9d9;"> x &amp; x translation &amp; translation &amp; 1 0 0\\</span>
+ \caption{Survey questions}
+ \label{tab:questions}
+ \end{table}
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffcccc;">\subsection{Participating countries}
+</span><span style="color: #aa2222; background-color: #ffcccc;">-</span><span style="background-color: #ffcccc;">\label{sec:org5f3ff06}</span><span style="background-color: #ffeeee;">
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #eeffee;">
+</span> 
+ \phantomsection
+ \label{count_country}
+<span style="background-color: #d9d9d9;">@@ -439,7 +452,7 @@</span><span style="background-color: #d9d9d9;"> Germany &amp; 3 \\</span>
+ Canada &amp; 1 \\
+ Spain &amp; 1 \\
+ Australia &amp; 1 \\
+<span style="color: #aa2222; background-color: #ffeeee;">-</span><span style="background-color: #ffcccc;">??</span><span style="background-color: #ffeeee;"> &amp; 1 \\
+</span><span style="color: #22aa22; background-color: #eeffee;">+</span><span style="background-color: #bbffbb;">Italy</span><span style="background-color: #eeffee;"> &amp; 1 \\
+</span> Japan &amp; 1 \\
+ Sweden &amp; 1 \\
+ \bottomrule
+</pre>
+  </body>
+</html>
