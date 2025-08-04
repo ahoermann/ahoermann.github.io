@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- Created by htmlize-1.57 in css mode. -->
+<html>
+  <head>
+    <title>edits_tex.patch</title>
+    <style type="text/css">
+    <!--
+      body {
+        color: #000000;
+        background-color: #ffffff;
+      }
+
+      a {
+        color: inherit;
+        background-color: inherit;
+        font: inherit;
+        text-decoration: inherit;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    -->
+    </style>
+  </head>
+  <body>
+    <pre>
+diff --git a/survey_gisas.tex b/survey_gisas.tex
+index 31f8ff4..89ad977 100644
+--- a/survey_gisas.tex
++++ b/survey_gisas.tex
+@@ -1,4 +1,4 @@
+-% Created 2025-06-13 Fri 11:22
++% Created 2025-08-04 Mon 11:54
+ % Intended LaTeX compiler: xelatex
+ \documentclass[a4paper,twocolumn]{article}
+ \usepackage{graphicx}
+@@ -8,38 +8,50 @@
+ \usepackage[normalem]{ulem}
+ \usepackage{capt-of}
+ \usepackage{hyperref}
+-\usepackage{booktabs}\usepackage{longtable}
++\usepackage{booktabs}\usepackage{longtable}\usepackage{multicol}
+ \usepackage{amsmath}
+ \usepackage{csquotes}
+ \usepackage{biblatex}\usepackage{etoolbox}\usepackage{siunitx}
+ \addbibresource{references.bib}
+ \author{Anja F. H&#246;rmann, Melika Moradi, Ingo Bre&#223;ler, and Brian R. Pauw}
+ \date{\today}
+-\title{Grazing incidence scattering surveyed: state of the art in alignment and calibration}
++\title{Grazing incidence scattering surveyed: toward reference methods for alignment and calibration}
+ \hypersetup{
+  pdfauthor={Anja F. H&#246;rmann, Melika Moradi, Ingo Bre&#223;ler, and Brian R. Pauw},
+- pdftitle={Grazing incidence scattering surveyed: state of the art in alignment and calibration},
+- pdfkeywords={grazing incidence, alignment, calibration, community, standardization},
++ pdftitle={Grazing incidence scattering surveyed: toward reference methods for alignment and calibration},
++ pdfkeywords={grazing incidence, alignment, calibration, reference method, community, standardization},
+  pdfsubject={},
+  pdfcreator={Emacs 29.4 (Org mode 9.7.24)}, 
+  pdflang={English}}
+ \begin{document}
+ 
+-\maketitle
+-\begin{abstract}
+-We surveyed grazing incidence small-angle scattering (GISAS)
+-practitioners on what comes before an experiment: hardware, software,
+-sample alignment, and instrument calibration. Our data on 27 instruments provides
+-the basis for standardisation in GISAS, a relatively young technique
++\renewcommand{\abstractname}{\vspace{-\baselineskip}}
++\twocolumn[
++  \begin{@twocolumnfalse}
++    \maketitle
++    \begin{abstract}
++
++Grazing incidence small-angle scattering (GISAS) is a relatively young technique
+ with important applications in thin film technology and untapped
+-potential when it comes to 2d analysis in absolute scale. Twenty-two
+-questions were designed to elucidate the state of the art which we can work with in standardization,
+-and gather tips and tricks. We found laboratories, with very
+-few exceptions, to be prepared to implement standards but no standard
+-emerging naturally for sample alignment and instrument calibration. We,
++potential when it comes to 2d analysis in absolute scale.
++Approaching standardisation and reference methods early is foundational for reproducibility and comparability across laboratories and reduction of systematic error sources.
++It underpins trust in data obtained and accelerates innovation by working from a common methodological baseline.
++Accordingly, obtaining reproducible results from different GISAS instruments requires an agreement on how
++things are done, calibrated and defined.
++To pave the way for standardisation and reference methods,
++we surveyed GISAS practitioners on what comes before an experiment: hardware, software,
++sample alignment, and instrument calibration.
++Twenty-two questions were designed to elucidate the state of the art based on which
++we can develop reference methods.
++Our data on 27 instruments provides the basis for standardisation.
++We found laboratories, with very
++few exceptions, to be prepared to implement future reference methods but no consensus
++emerges naturally for sample alignment and instrument calibration. We,
+ that is the GISAS community, are thus in a position to embark on the
+-journey of standardization. Engage! % lol :).
+-\end{abstract}
++journey of standardisation. Engage! % lol :).
++    \end{abstract}
++  \end{@twocolumnfalse}
++  ]\vspace{\baselineskip}
+ \section{Introduction}
+ \label{sec:orga1dc171}
+ 
+@@ -57,14 +69,14 @@ scattering and reflectometry instruments requires an agreement on how
+ things are done, calibrated and defined. Whether the grazing incidence community has converged on a methodology
+ remains to be proven. Therefore, we designed a survey around this
+ question, the result of which can serve as a starting point for
+-standardisation in GI scattering. Contrary to
++standardisation and reference methods for GI scattering. Contrary to
+ reflectometry\footnote{Reflectometry emerged in earlier decades and has undergone standardisation \cite{iso_xrr_2020} to some extent.}, GI is a good candidate for this
+ effort since it emerged in the 1980s
+ \cite{vineyard82_grazin_incid_diffr_distor_wave}, has a degree of
+ variability due to the necessary alignment of every sample
+ \cite{holzer22_impac_sampl_misal_grazin_incid}, and requires considerable
+-effort for analysis at the time of writing. This paper, as the
+-underlying questionnaire, focuses on preparation of a GI experiment:
++effort for analysis at the time of writing. This paper and the
++underlying questionnaire focus on the preparation of a GI experiment:
+ hardware, software, sample alignment, and calibration.
+ \section{Survey methodology}
+ \label{sec:org962bde1}
+@@ -80,17 +92,15 @@ software, alignment and calibration routines with two main goals:
+ \begin{enumerate}
+ \item To ensure as many instruments as possible can implement a standard
+ developed on this basis.
+-\item To learn about the best methods by allowing respondents to enter
++\item To learn about the best methods by allowing respondents to share
+ bespoke solutions they have developed.
+ \end{enumerate}
+ 
+ We employed a mixture of multiple choice, short free-form text and
+ optional long free-form text. Two github gists were set up to allow
+ respondents to contribute code samples, sample holder images, and
+-comments. The choice to allow but not require more in-depth responses
+-was deliberate to encourage responses, with the drawback of leaving
+-the \enquote{Why?} behind the answers unanswered in many
+-cases.
++comments. The decision to allow, but not require, more in-depth responses was made deliberately to encourage participants to respond, but this meant that the \enquote{why?} behind the answers often
++remained unanswered.
+ \subsection{Data collection}
+ \label{sec:org922c880}
+ 
+@@ -99,13 +109,13 @@ the sa\_scat@iucr.org mailing list, and personal e-mail communication between Ju
+ On July 18, 2024 at SXNS17, the 
+ survey was introduced and access shared via a QR code in session
+ (attendance: a few dozen). Later that day an announcement e-mail
+-followed to the sa\_scat@iucr.org mailing list, to which 363 people subscribe as of April 17, 2025.
++followed to the sa\_scat@iucr.org mailing list (with 363 subscribers as of April 17, 2025).
+ Further responses were gathered by word of mouth as well as
+ individual encouragement to (beamline) scientists by the authors,
+ followed by a second and third oral presentation at canSAS and SAS2024
+ (Taipei, Taiwan; attendance: a few dozen). Responses received until
+ March 4th, 2025 are considered for the present communication.
+-Since our own lab GISAXS remains under development we did not fill
++Since our own GISAXS setup in the lab remains under development we did not fill
+ the survey ourselves. 
+ \subsection{Response}
+ \label{sec:orgb632fe1}
+@@ -161,7 +171,7 @@ difference in horizontal and vertical emittance at synchrotron sources \cite{xra
+ 
+ In addition, the horizontal orientation is advantageous for samples
+ influenced by gravity, although for liquid surfaces the ability to
+-pitch the beam downward is required as well.
++pitch the beam is required as well.
+ 
+ \phantomsection
+ \label{orientation_count}
+@@ -186,6 +196,7 @@ and adapt routines is, for standardization purposes, more important than
+ any specific software used (\ref{fig:software}).
+ To conclude, the hardware and software layers available are adjustable to accommodate standardized alignment and calibration tasks.
+ 
++
+ \phantomsection
+ \label{hardware_count}
+ \begin{figure}[htbp]
+@@ -227,7 +238,8 @@ the sample's reflectivity and peaks at incident angle zero (see \ref{fig:rocking
+ instruments report to rely on the specular reflection for alignment
+ purposes.
+ In conclusion, respondents do not all have the same signal available
+-for alignment purposes such that their alignment routines necessarily differ. 
++for alignment purposes such that their alignment routines necessarily differ.
++Conditional recommendations would therefore be the closest approximation to a reference method for sample alignment.
+ 
+ \phantomsection
+ \label{}
+@@ -286,6 +298,7 @@ different distances. The majority of users of this technique are lab
+ instrument scientists (as stated above, our lab instrument is not in the
+ dataset).
+ Even if concrete choices like number of points used for calibration
++and whether calibration is done in transmission or reflection geometry
+ are not reflected in the dataset, an agreement seems more tangible here.
+ Once a recommended general principle for instrument calibration is
+ identified, work on questions like uncertainties of the calibration results
+@@ -358,9 +371,10 @@ x &amp; x translation &amp; translation &amp; 1 0 0\\
+ \section{Supporting Information}
+ \label{sec:orga13773e}
+ 
+-
+-\subsection{Questions}
+-\label{sec:org41bebf8}
++We report survey questions (table \ref{tab:questions}), countries where
++participating institutions are located (table \ref{tab:country_count}) as well
++as unique alignment routines (Fig. \ref{fig:alignment}) and
++most frequently mentioned software (Fig. \ref{fig:software}).
+ 
+ \phantomsection
+ \label{}
+@@ -420,8 +434,7 @@ x &amp; x translation &amp; translation &amp; 1 0 0\\
+ \caption{Survey questions}
+ \label{tab:questions}
+ \end{table}
+-\subsection{Participating countries}
+-\label{sec:org5f3ff06}
++
+ 
+ \phantomsection
+ \label{count_country}
+@@ -439,7 +452,7 @@ Germany &amp; 3 \\
+ Canada &amp; 1 \\
+ Spain &amp; 1 \\
+ Australia &amp; 1 \\
+-?? &amp; 1 \\
++Italy &amp; 1 \\
+ Japan &amp; 1 \\
+ Sweden &amp; 1 \\
+ \bottomrule
+</pre>
+  </body>
+</html>
